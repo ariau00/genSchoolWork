@@ -1,0 +1,124 @@
+.grid {
+    display: grid;
+    /* border: 2px blue solid; */
+    /* background-color: white; */
+    margin: 0px;
+    width: 100%;
+    /* height: 350px;
+    width: 500px; */
+    gap: 10px 10px;
+}
+
+.grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* border: 2px dodgerblue solid; */
+    background-color: white;
+}
+
+.gridleft {
+    height: 100vh;
+    grid-template-rows: 2fr 1fr;
+}
+
+.gridright {
+    height: 100vh;
+    grid-template-rows: 1fr 4fr;
+}
+
+.grid .carousel {
+    height: 40vh;
+}
+
+.mainCard{
+    flex-flow: wrap;
+    /* gap: 5px 5px; */
+
+}
+
+.myCard{
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item {
+    max-height: 40vh;
+    /* max-width: 60vw;
+    max-height: 40vh; */
+}
+
+body {
+    background-image: url('/image/VAVABG.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.icon {
+    padding: 0px 10px 0px;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    margin: 10px;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: rgba(0,0,0,.03);
+}
+
+.myDate{
+    text-align: center;
+}
+
+.gridForm label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+
+}
+
+.gridForm input,
+.gridForm select,
+.gridForm textarea{
+    text-align: center;
+    margin: 5px;
+}
+.mainCard > div{
+    display: flex;
+}
+.gridForm {
+    display: grid;
+    width: 100%;
+    grid-template: 1fr 1fr 2fr/ 1fr 2fr;
+}
+@media screen and (max-width: 991px) {
+    .mainCard > div{
+        display: unset;
+    }
+    .gridForm {
+        display: grid;
+        width: 100%;
+        grid-template: none;
+    }
+}
